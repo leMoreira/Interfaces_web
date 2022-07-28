@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+/*
+Tamanho das fontes
+font-size: 100% equivale a 16px
+font-size: 1rem equivale a 16px
+font-size:62.5% equivale a 10px
+
+*/
+
+:root{
+    font-size:62.5%;
+    --cor-bg-menu:gold;/* Variável */
+    --cor-fonte-menu:black; /* variavel */
+}
+
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+#menu{
+    width: 100%;
+    background-color: var(--cor-bg-menu);
+
+}
+
+ul{
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    list-style: none;
+}
+
+li{
+    padding: 20px 30px;
+    transition: all 0.4s;
+
+}
+
+li:last-child{
+    padding:20px 30px;
+    transition: all 0.2s;
+    background-color: blueviolet;
+    margin-left: 200px;
+    border-radius: 10px;
+}
+
+li:hover{
+    padding: 20px 30px;
+    background-color: #a52a2a;
+    border-radius: 10px;
+    
+}
+
+
+a{
+    text-decoration: none;
+    color:black;
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 1.8rem;
+}
+
+a:hover{
+    color:#fff;
+}
+
+/*Container */
+.container {
+   width: 100vw;
+   height: 90vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items:center;
+}
+
+.container h4{
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.container h1{
+    font-size: 4rem;
+    font-family: 'Poppins';
+    text-shadow: 6px 2px 8px blueviolet;
+}
+
+.container p{
+    font-size: 2rem;
+    margin-top: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 75%;
+    margin-bottom: 15px;
+}
+
+.container a{
+    margin-top: 20px;
+    color:#fff;
+    background-color: blueviolet;
+    width: 30%;
+    height: 45px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 2rem;
+    transition: all 0.5s;
+}
+
+.container a:hover{
+    background-color:rgb(59, 18, 97)
+}
+
+
+

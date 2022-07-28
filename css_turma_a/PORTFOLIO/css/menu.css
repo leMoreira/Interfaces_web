@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    width: 100vw;
+    height: auto;
+}
+
+header .menu{
+    width: 100vw;
+    height: 15vh;
+    background-color: #91338c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .menu .foto {
+    margin-left:10px;
+    width: 100px;
+    height: 10vh;
+    background-color: #fff;
+}
+
+header .menu #burguer{
+    width: 45px;
+    height: 45px;
+    background-color: #007765;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    text-decoration: none;
+    margin-right: 10px;
+    border-radius: 10px;
+    font-size:1.3rem;
+    transition: all 0.3s;
+}
+
+header .menu #burguer:hover{
+    background-color: #3e7b72;
+}
+
+header .menu #fechar{
+    display:none;
+}
+
+header .coluna{
+    width:40vw;
+    height: auto;
+}
+
+header .coluna .itens {
+    width: 25vw;
+    height: 100%;
+    background-color: #007765;
+    color:#fff;
+}
+
+header .coluna .itens ul{
+    list-style: none;
+    padding-left: 5px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}

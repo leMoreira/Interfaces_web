@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;/* Alunos pesquisarem */
+}
+
+body{
+    width: 100vw;
+    height:100vh;
+    display: flex; /* Elementos ficam um do lado do outro */
+    justify-content: center; /* Centraliza na horizontal */
+    align-items: center; /* Centraliza na vertical */
+}
+
+
+.container {
+    width: 900px;
+    height: 500px;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .esquerdo {
+    width: 20vw;
+    height: 50vh;
+    background-color: orangered;
+   
+}
+
+.container .direito {
+    width: 0vw;
+    height: 50vh;
+    background-color: goldenrod;
+    transition: ease-in 0.5s;
+}
+
+
+
+

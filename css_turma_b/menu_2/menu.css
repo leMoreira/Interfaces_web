@@ -1,0 +1,75 @@
+*{
+	padding: 0;
+	margin: 0;
+
+}
+
+#menu{
+	width: 100%;
+	height: 100px;
+	background: rgb(174,208,238);
+background: linear-gradient(90deg, rgba(174,208,238,1) 0%, rgba(98,68,175,1) 100%);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+ul {
+	width: 40%;
+	display: flex;
+	list-style: none;
+	justify-content: space-around;
+}
+
+ul li {
+	padding: 40px 30px;
+	color: #ffffff;
+	font-size: 1.2rem;
+	transition: all 0.5s;
+}
+
+ul li:hover{
+	padding: 40px 30px;
+	background-color: #ffffff;
+	color: blueviolet;
+	cursor: pointer;
+
+}
+
+.logo{
+	margin-left: 20px;
+}
+
+
+.row {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.row .esquerdo{
+	position: relative;
+	width: 50%;
+	height: 300px;
+	background-color: blueviolet;
+
+}
+
+.row .esquerdo button {
+	border: none;
+	width: 35px;
+	height: 35px;
+	background-color: #fff;
+	color:blueviolet;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+
+.row .direito{
+	width: 50%;
+	height: 300px;
+	background-color: orange;
+}
