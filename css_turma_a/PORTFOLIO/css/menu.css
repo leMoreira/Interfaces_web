@@ -20,8 +20,13 @@ header .menu{
 header .menu .foto {
     margin-left:10px;
     width: 100px;
-    height: 10vh;
-    background-color: #fff;
+    height: auto;
+    background-color:#91338c;
+}
+
+header .menu .foto img {
+    border-radius: 50px;
+    vertical-align: middle;
 }
 
 header .menu #burguer{
@@ -45,11 +50,27 @@ header .menu #burguer:hover{
 
 header .menu #fechar{
     display:none;
+
+    width: 45px;
+    height: 45px;
+    background-color: #007765;
+    
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    text-decoration: none;
+    margin-right: 10px;
+    border-radius: 10px;
+    font-size:1.3rem;
+    transition: all 0.3s;
 }
 
 header .coluna{
     width:40vw;
-    height: auto;
+    height: 85vh;
+
+    margin-left: -50%;
+    transition: ease-in 0.3s;
 }
 
 header .coluna .itens {
@@ -65,3 +86,8 @@ header .coluna .itens ul{
     padding-top: 35px;
     padding-bottom: 35px;
 }
+
+header .coluna .itens ul li {
+    padding:15px 0 15px 5px;
+}
+
