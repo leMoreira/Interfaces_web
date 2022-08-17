@@ -2,10 +2,19 @@
     padding: 0;
     margin: 0;
 }
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+   
+}
 
 header{
     width: 100vw;
     height: auto;
+    z-index: 2;
 }
 
 header .menu{
@@ -91,3 +100,128 @@ header .coluna .itens ul li {
     padding:15px 0 15px 5px;
 }
 
+main{
+    position: absolute;
+    top: 155px;
+    width: 50vw;
+    height: 60vh;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .box{
+    padding: 20px 20px;
+    background-color: aqua;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 3px 3px 3px #666;
+}
+
+main .box ul{
+    list-style: none;
+}
+
+main .box ul li{
+    margin-bottom: 10px;
+}
+main .box ul li:nth-child(9){
+    margin-bottom: 0;
+}
+
+main h2{
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px #000 solid;
+    animation: title infinite 3s;
+}
+
+@keyframes title {
+    0%{
+        background-color: #007765;
+        color: #fff;
+    
+    }
+
+    10% {
+        background-color: #666;
+        color: #fff;
+       
+    }
+    
+    30% {
+        background-color: chartreuse;
+        color: #fff;
+       
+    }
+
+    40% {
+        background-color: gold;
+        color: #000;
+     
+    }
+
+    50% {
+        background-color: tomato;
+        color: #fff;
+        
+    }
+
+    70% {
+        background-color: aqua;
+        color: #000;
+        
+    }
+
+    80% {
+        background-color: #666;
+        color: #fff;
+        
+    }
+
+    100%{
+        background-color: transparent;
+        color:#000;
+       
+    }
+    
+}
+
+.homem{
+    position: absolute;
+    right: -24px;
+}
+
+.bola{
+    position: absolute;
+    right: 125px;
+    animation: jogando 3s infinite;
+    transition: 3s all;
+    opacity: 1;
+}
+
+@keyframes jogando {
+
+    from{
+        right: 10%;
+        opacity: 0.7;
+        transform: rotate(0deg);
+    }
+
+    to{
+        right: 100%;
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+
+    
+
+  
+    
+}
